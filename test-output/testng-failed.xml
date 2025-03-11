@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="methods.Get_method">
+      <class name="methods.Post_method_using_Map">
         <methods>
-          <include name="test1"/>
+          <include name="BDDTest"/>
         </methods>
-      </class> <!-- methods.Get_method -->
+      </class> <!-- methods.Post_method_using_Map -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

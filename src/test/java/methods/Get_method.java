@@ -23,8 +23,16 @@ public class Get_method {
 
 	}
 
+	
 	@Test
-	public void test1()  {
+	// when it comes to rest assured we need to static import 2 packages 
+	// import static io.restassured.RestAssured.given;
+	// import static org.hamcrest.Matchers.equalTo;
+	
+	public void BDDTest()  {
+		
+		
+	// here when we write the JSON path we don't use "x.data[0].email" we don't start with "." below we have started from "data[0].email"
 		given().when().get("https://reqres.in/api/users?page=2").then().statusCode(200).body("data[0].email", equalTo("michael.lawson@reqres.in"));
 		
 	//	Response response = given().when().get("https://reqres.in/api/users?page=2");

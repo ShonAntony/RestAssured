@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-10T11:39:34 IST" name="Default suite" finished-at="2025-03-10T11:39:36 IST" duration-ms="2332">
+  <suite started-at="2025-03-11T15:03:10 IST" name="Default suite" finished-at="2025-03-11T15:03:14 IST" duration-ms="4061">
     <groups>
     </groups>
-    <test started-at="2025-03-10T11:39:34 IST" name="Default test" finished-at="2025-03-10T11:39:36 IST" duration-ms="2332">
-      <class name="methods.Get_method">
-        <test-method signature="test1()[pri:0, instance:methods.Get_method@3e84448c]" started-at="2025-03-10T11:39:34 IST" name="test1" finished-at="2025-03-10T11:39:36 IST" duration-ms="2309" status="PASS">
+    <test started-at="2025-03-11T15:03:10 IST" name="Default test" finished-at="2025-03-11T15:03:14 IST" duration-ms="4061">
+      <class name="methods.Post_method_using_Map">
+        <test-method signature="BDDTest()[pri:0, instance:methods.Post_method_using_Map@50b5ac82]" started-at="2025-03-11T15:03:10 IST" name="BDDTest" finished-at="2025-03-11T15:03:14 IST" duration-ms="3992" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- methods.Get_method -->
+        </test-method> <!-- BDDTest -->
+      </class> <!-- methods.Post_method_using_Map -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
