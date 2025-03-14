@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="methods.Post_method_using_Map">
+      <class name="methods.Assertion_Hamcrest">
         <methods>
-          <include name="BDDTest"/>
+          <include name="testKeyValue"/>
         </methods>
-      </class> <!-- methods.Post_method_using_Map -->
+      </class> <!-- methods.Assertion_Hamcrest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,34 +5,52 @@
 	<groupId>fireflink</groupId>
 	<artifactId>Rest_Assured</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	
+	<properties>
+		<rest-assured-version>5.4.0</rest-assured-version>
+		<testNG_version>7.10.2</testNG_version>
+		<json-version>20240303</json-version>
+		<jackson-version>2.18.2</jackson-version>
+	</properties>
+	
+	
+	
+	
+	
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>5.4.0</version>
+			<version>${rest-assured-version}</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.10.2</version>
+			<version>${testNG_version}</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
-			<version>20240303</version>
+			<version>${json-version}</version>
 		</dependency>
 		<!--
 		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.18.2</version>
+			<version>${jackson-version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>FireFlink</groupId>
+			<artifactId>Learing_Framework</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
