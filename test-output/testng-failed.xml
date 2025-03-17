@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="methods.Assertion_Hamcrest">
+      <class name="methods.JsonPathUtility">
         <methods>
-          <include name="testCombinedAssertions"/>
+          <include name="jsonPath"/>
         </methods>
-      </class> <!-- methods.Assertion_Hamcrest -->
+      </class> <!-- methods.JsonPathUtility -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

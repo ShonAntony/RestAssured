@@ -5,19 +5,17 @@
 	<groupId>fireflink</groupId>
 	<artifactId>Rest_Assured</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	
+
+
 	<properties>
 		<rest-assured-version>5.4.0</rest-assured-version>
 		<testNG_version>7.10.2</testNG_version>
 		<json-version>20240303</json-version>
 		<jackson-version>2.18.2</jackson-version>
+		<json-path-version>2.9.0</json-path-version>
 	</properties>
-	
-	
-	
-	
-	
+
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
@@ -52,5 +50,12 @@
 			<artifactId>Learing_Framework</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>${json-path-version}</version>
+		</dependency>
+
 	</dependencies>
 </project>
