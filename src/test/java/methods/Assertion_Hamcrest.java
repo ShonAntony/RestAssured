@@ -1,11 +1,8 @@
 package methods;
 
-import java.util.regex.Matcher;
-
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
-
-import com.google.protobuf.NullValue;
+import static org.hamcrest.Matchers.*;
 
 import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
@@ -68,6 +65,24 @@ public class Assertion_Hamcrest {
 	public void testKeyValue() {
 		RestAssured.given().baseUri("https://reqres.in/api").when().get("/users?page=2").then().body("total", Matchers.hasValue(12));
 	}
+	
+	
+	// to check the reverse of the things we are going to use not operator 
+	@Test
+	public void testNot() {
+		RestAssured.given().baseUri("https://reqres.in/api").when().get("/users?page=2").then().body("total", not(Matchers.equalTo("13")));
+	}
+	
+	
+	// to combine more than one assertions under each API call
+	@Test
+	public void testCombinedAssertions() {
+		RestAssured.given().baseUri("https://reqres.in/api").when().get("/users?page=2").then().body("data[0].id", Matchers.equalTo(7),
+																"data[0].email",Matchers.equalTo("michael.lawson@reqres.in"),
+																"data[0].first_name",Matchers.equalTo("Michael"),
+																"data[0].last_name",Matchers.equalTo("Lawson"));
+	}
+	
 
 
 	

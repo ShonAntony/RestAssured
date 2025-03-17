@@ -5,7 +5,7 @@
     <classes>
       <class name="methods.Assertion_Hamcrest">
         <methods>
-          <include name="testKeyValue"/>
+          <include name="testCombinedAssertions"/>
         </methods>
       </class> <!-- methods.Assertion_Hamcrest -->
     </classes>

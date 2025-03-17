@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--1280774072\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--1088821869\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="methods.Assertion_Hamcrest" class="method navigator-link" hash-for-method="testKeyValue">testKeyValue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="methods.Assertion_Hamcrest" class="method navigator-link" hash-for-method="testCombinedAssertions">testCombinedAssertions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -127,13 +127,25 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testKeyValue">
-                  </a> <!-- testKeyValue -->
-                  <span class="method-name">testKeyValue</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-JSON path total doesn&apos;t match.
-Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
-  Actual: &lt;12&gt;
+                  <a name="testCombinedAssertions">
+                  </a> <!-- testCombinedAssertions -->
+                  <span class="method-name">testCombinedAssertions</span>
+                  <div class="stack-trace">java.lang.AssertionError: 4 expectations failed.
+JSON path data[0].id doesn&apos;t match.
+Expected: &lt;5&gt;
+  Actual: &lt;7&gt;
+
+JSON path data[0].email doesn&apos;t match.
+Expected: michael.lawson@reqres.i
+  Actual: michael.lawson@reqres.in
+
+JSON path data[0].first_name doesn&apos;t match.
+Expected: Michae
+  Actual: Michael
+
+JSON path data[0].last_name doesn&apos;t match.
+Expected: Lawso
+  Actual: Lawson
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -169,7 +181,7 @@ Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at methods.Assertion_Hamcrest.testKeyValue(Assertion_Hamcrest.java:69)
+	at methods.Assertion_Hamcrest.testCombinedAssertions(Assertion_Hamcrest.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -207,7 +219,7 @@ Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--1280774072\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--1088821869\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -218,7 +230,7 @@ Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
     &lt;classes&gt;
       &lt;class name=&quot;methods.Assertion_Hamcrest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testKeyValue&quot;/&gt;
+          &lt;include name=&quot;testCombinedAssertions&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- methods.Assertion_Hamcrest --&gt;
     &lt;/classes&gt;
@@ -262,14 +274,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testKeyValue')
+data.setCell(0, 1, 'testCombinedAssertions')
 data.setCell(0, 2, 'methods.Assertion_Hamcrest')
-data.setCell(0, 3, 4163);
+data.setCell(0, 3, 1845);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -284,7 +296,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -292,9 +304,13 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testNull</span>
                 <br/>
+                <span class="ignored-method-name">testKeyValue</span>
+                <br/>
                 <span class="ignored-method-name">testNumbers</span>
                 <br/>
                 <span class="ignored-method-name">testStrings</span>
+                <br/>
+                <span class="ignored-method-name">testNot</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -310,7 +326,7 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testKeyValue</span>
+                <span class="method-name">testCombinedAssertions</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

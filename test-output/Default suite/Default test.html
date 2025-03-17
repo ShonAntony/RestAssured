@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 14 18:26:06 IST 2025</td>
+<td>Started on:</td><td>Mon Mar 17 10:01:55 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4226 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1871 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='methods.Assertion_Hamcrest.testKeyValue()'><b>testKeyValue</b><br>Test class: methods.Assertion_Hamcrest</td>
-<td><div><pre>java.lang.AssertionError: 1 expectation failed.
-JSON path total doesn&apos;t match.
-Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
-  Actual: &lt;12&gt;
+<td title='methods.Assertion_Hamcrest.testCombinedAssertions()'><b>testCombinedAssertions</b><br>Test class: methods.Assertion_Hamcrest</td>
+<td><div><pre>java.lang.AssertionError: 4 expectations failed.
+JSON path data[0].id doesn&apos;t match.
+Expected: &lt;5&gt;
+  Actual: &lt;7&gt;
+
+JSON path data[0].email doesn&apos;t match.
+Expected: michael.lawson@reqres.i
+  Actual: michael.lawson@reqres.in
+
+JSON path data[0].first_name doesn&apos;t match.
+Expected: Michae
+  Actual: Michael
+
+JSON path data[0].last_name doesn&apos;t match.
+Expected: Lawso
+  Actual: Lawson
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -115,7 +127,7 @@ Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at methods.Assertion_Hamcrest.testKeyValue(Assertion_Hamcrest.java:69)
+	at methods.Assertion_Hamcrest.testCombinedAssertions(Assertion_Hamcrest.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -144,11 +156,23 @@ Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace475526834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace475526834'><pre>java.lang.AssertionError: 1 expectation failed.
-JSON path total doesn&apos;t match.
-Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
-  Actual: &lt;12&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace1617566660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617566660'><pre>java.lang.AssertionError: 4 expectations failed.
+JSON path data[0].id doesn&apos;t match.
+Expected: &lt;5&gt;
+  Actual: &lt;7&gt;
+
+JSON path data[0].email doesn&apos;t match.
+Expected: michael.lawson@reqres.i
+  Actual: michael.lawson@reqres.in
+
+JSON path data[0].first_name doesn&apos;t match.
+Expected: Michae
+  Actual: Michael
+
+JSON path data[0].last_name doesn&apos;t match.
+Expected: Lawso
+  Actual: Lawson
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -184,7 +208,7 @@ Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at methods.Assertion_Hamcrest.testKeyValue(Assertion_Hamcrest.java:69)
+	at methods.Assertion_Hamcrest.testCombinedAssertions(Assertion_Hamcrest.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -214,8 +238,8 @@ Expected: map containing [ANYTHING-&gt;&quot;12&quot;]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
-<td>methods.Assertion_Hamcrest@1b2abca6</td></tr>
+<td>1</td>
+<td>methods.Assertion_Hamcrest@2ed2d9cb</td></tr>
 </table><p>
 </body>
 </html>
