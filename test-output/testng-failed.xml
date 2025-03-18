@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="methods.JsonPathUtility">
+      <class name="methods.LogMultipleTestsIntoOneFile">
         <methods>
-          <include name="jsonPath"/>
+          <include name="testFilter"/>
+          <include name="test4"/>
         </methods>
-      </class> <!-- methods.JsonPathUtility -->
+      </class> <!-- methods.LogMultipleTestsIntoOneFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

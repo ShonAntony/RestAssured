@@ -15,8 +15,8 @@ public class JsonOrXmlFilePayload {
 	@Test
 	public void jsonPayload() {
 		File jsonFile = new File("./test data/test_json.json");
-		ValidatableResponse response = RestAssured.given().baseUri("https://reqres.in/").contentType(ContentType.JSON).body(jsonFile).post("api/users").then().body("job", equalTo("Sike"));
-		System.out.println(response.extract().asPrettyString());
+		ValidatableResponse response = RestAssured.given().baseUri("https://reqres.in/").contentType(ContentType.JSON).body(jsonFile).post("api/users").then().assertThat().body("job", equalTo("Sike")).log().all();
+		
 	}
 
 }
