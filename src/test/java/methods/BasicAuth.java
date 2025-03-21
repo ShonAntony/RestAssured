@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
+
 
 public class BasicAuth {
 	
@@ -15,8 +15,7 @@ public class BasicAuth {
 		String stringRespose = response.asString();
 		JsonPath jsonPath = new JsonPath(stringRespose);
 		String jsonPathString = jsonPath.getString("jwtToken");
-		System.out.println("JwtToken :"+jsonPathString);
-		
+		System.out.println("JwtToken :"+jsonPathString);		
 	}
 
 }
