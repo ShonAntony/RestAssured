@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="methods.LogMultipleTestsIntoOneFile">
+      <class name="methods.BasicAuth">
         <methods>
-          <include name="testFilter"/>
-          <include name="test4"/>
+          <include name="basicAuth"/>
         </methods>
-      </class> <!-- methods.LogMultipleTestsIntoOneFile -->
+      </class> <!-- methods.BasicAuth -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
