@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="methods.Content_type">
+      <class name="methods.Response_Time_validation">
         <methods>
-          <include name="contentTypeTest"/>
+          <include name="timeTest"/>
         </methods>
-      </class> <!-- methods.Content_type -->
+      </class> <!-- methods.Response_Time_validation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
